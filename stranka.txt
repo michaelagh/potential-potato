@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Osobná Stránka</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {margin-top: 50px;font-family: Arial, sans-serif;}
+
+        .navbar {background-color: #5e395d;padding: 20px;}
+
+        .navbar-nav {display: flex; justify-content: flex-start;}
+
+        .navbar-nav .nav-item {margin-right: 20px;}
+
+        .navbar-nav .nav-item:last-child {margin-right: 0;}
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: Georgia;
+            padding: 10px 20px;
+            text-align: center;
+            transition: background-color 0.3s;}
+
+        .navbar-nav .nav-link:hover {
+            background-color: #a1759e;
+            color: black;
+            border-radius: 5px;}
+
+        .content-section {
+            padding: 60px 0;
+            min-height: 100vh;
+            color: white;}
+
+
+        #home {background-color: #9c7b9b;}
+
+        #hobbies {background-color: #9c7b9b;}
+
+        #schedule {background-color: #9c7b9b;}
+
+        #contact {background-color: #9c7b9b;}
+
+        footer {
+            background-color: #5e395d;
+            color: white;
+            padding: 20px 0;
+            text-align: center;}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-light">
+        <div class="container">
+            <ul class="navbar-nav ms-auto flex-row">
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)" onclick="showSection('home')">Úvod</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)" onclick="showSection('hobbies')">Záľuby</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)" onclick="showSection('schedule')">Rozvrh</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)" onclick="showSection('contact')">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+		<div id="content-container">
+    		<div class="content-section" id="home">
+        		<h1 style="font-family: 'Georgia', sans-serif; color: white;font-weight: bold;font-size: 50px">Vitajte na mojej osobnej stránke</h1>
+        		<p style="font-size: 20px; color: pink;">Tu nájdete informácie o mne, mojich záľubách, rozvrhu a kontaktný formulár.</p>
+    		</div>
+		</div>
+
+		<div class="content-section" id="hobbies" style="display: none; font-family: 'Arial', sans-serif; color: white;">
+    		<h2 style="color: pink; font-family: 'Georgia'; font-weight: bold; font-size: 50px;">Moje záľuby		</h2>
+    		<ul style="font-size: 25px;">
+        		<li>Čítanie kníh</li>
+        		<li>Šport</li>
+        		<li>Plávanie</li>
+   		 	</ul>
+		</div>
+        
+        <div class="content-section" id="schedule" style="display: none;">
+    <h2 style="color: pink; font-family: 'Georgia'; font-weight: bold; font-size: 50px;">Môj rozvrh</h2>
+    <table class="table table-bordered" style="border-collapse: collapse; width: 100%; font-family: 'Arial', sans-serif; font-size: 16px;">
+        <thead>
+            <tr>
+                <th style="border: 2px solid #ddd; padding: 8px; text-align: center; background-color: #f2f2f2; font-weight: bold;">Pondelok</th>
+                <th style="border: 2px solid #ddd; padding: 8px; text-align: center; background-color: #f2f2f2; font-weight: bold;">Utorok</th>
+                <th style="border: 2px solid #ddd; padding: 8px; text-align: center; background-color: #f2f2f2; font-weight: bold;">Streda</th>
+                <th style="border: 2px solid #ddd; padding: 8px; text-align: center; background-color: #f2f2f2; font-weight: bold;">Štvrtok</th>
+                <th style="border: 2px solid #ddd; padding: 8px; text-align: center; background-color: #f2f2f2; font-weight: bold;">Piatok</th>
+            </tr>
+        </thead>
+       <tbody>
+    <tr><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">X</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">ANJ</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">OBN</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">SEM</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">SEM</td></tr>
+    <tr><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">X</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">ANJ</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">SEI</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">SEM</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">CVI</td></tr>
+    <tr><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">CSJ</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">SEM</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">SEI</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">NEJ</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">CVI</td></tr>
+    <tr><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">CSJ</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">NEJ</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">NEJ</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">SJL</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">NEJ</td></tr>
+    <tr><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">ANJ</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">SEI</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">MAT</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">SEI</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">SJL</td></tr>
+    <tr><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">TSV</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">MAT</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">ANJ</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">CVM</td><td style="border: 2px solid #ddd; padding: 8px; text-align: center; color: white;">X</td></tr>
+</tbody>
+    </table>
+</div>
+
+
+        <div class="content-section" id="contact" style="display: none;">
+            <h2 style="font-family: 'Georgia', sans-serif; color: pink;font-weight: bold;font-size: 50px">Kontaktujte ma!</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Meno</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Správa</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Odoslať</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Moja Osobná Stránka. Všetky práva vyhradené.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {section.style.display = 'none';});
+            const sectionToShow = document.getElementById(sectionId);
+            sectionToShow.style.display = 'block';}
+    </script>
+
+</body>
+</html>
+
